@@ -1,3 +1,18 @@
+---
+import { db, Email } from 'astro:db';
+
+if (Astro.request.method === 'POST') {
+    // parse form data
+    const formData = await Astro.request.formData();
+    const email = formData.get('email')
+    if (typeof email === 'string') {
+        // insert form data into the Email table
+        await db.insert(Email).values({ email })
+    }
+}
+---
+
+
 <footer>
     <div class="footer-middle">
         <div class="footer-content">

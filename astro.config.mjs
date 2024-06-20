@@ -11,5 +11,7 @@ import db from "@astrojs/db";
 export default defineConfig({
   integrations: [react(), markdoc(), mdx(), sitemap(), db()],
   output: "server",
-  adapter: vercel()
+  adapter: vercel({
+    webAnalytics: {enabled: true }
+  })
 });
