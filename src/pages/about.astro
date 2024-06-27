@@ -2,12 +2,43 @@
 import Layout from "../layouts/Layout.astro";
 ---
 <Layout title="What is Osmanthus?">
-    <p>Osmanthus is a book and magazine publisher.</p> </br>
-    <p>🚧 Site under construction 🚧</p>
+	<div id="main">
+		<div class="main-container">
+			<div class="part_l">
+				<div class="part_linner">
+					<div class="part_img">
+						<img src="/osmanthus-newspaper-about.webp" alt="newspaper clipping of an osmanthus tree" height="666" width="666">
+					</div>
+				</div>
+			</div>
+			<div class="part_r">
+				<div class="contact01">
+					<div class="heading">
+						<h3>Osmanthus is a publisher of all things culture, literature, and technology.</h3> </br>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="mission_outer">
+			<div class="container">
+				<div class="mission">
+					<p>
+						Founded in 2019, 
+						<em>Osmanthus</em>
+						publishes chapbooks, essays, and poetry suites. Our magazine Earshrub comes out weekly. Each week
+						a new essay or poetry suite is published by <em>Earshrub</em>. We seek to publish an annual print
+						edition that collects new and selected work from the previous year. In addition to Earshrub, the
+						Osmanthus imprint publishes chapbooks and full-lengths of poetry, fiction, cultural criticism, 
+						travel dispatches, and more.
+					</p>
+				</div>
+			</div>
+		</section>
+	</div>
 </Layout>
 
 <style>
-	main {
+	.main {
 		margin: auto;
 		padding: 1rem;
 		width: 800px;
@@ -15,6 +46,10 @@ import Layout from "../layouts/Layout.astro";
 		color: white;
 		font-size: 20px;
 		line-height: 1.6;
+	}
+	.main-container {
+		align-items: center;
+		justify-content: center;		
 	}
 	.astro-a {
 		position: absolute;
@@ -25,12 +60,57 @@ import Layout from "../layouts/Layout.astro";
 		height: auto;
 		z-index: -1;
 	}
-	p {
+
+	.part_l {
+
+	}
+
+	.part_linner {
+
+	}
+
+	.part_img {
+
+	}
+	img {
+		float: left;
+	}
+
+	.part_r {
+
+	}
+
+	.contact01 {
+
+	}
+
+	.heading {
+
+	}
+	h3 {
 		font-size: 4rem;
 		font-weight: 700;
 		line-height: 1;
 		text-align: center;
 		margin-bottom: 1em;
         color: white;
+		display: center;
 	}
+
+	mission_outer {
+		max-width: 960px;
+	}
+	p {
+		color: white;
+		display: center;
+		text-align: justify;
+		font-size: 2em;
+	}
+
+	
+
+	
+
+
+	
 </style>
